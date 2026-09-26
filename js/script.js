@@ -1,5 +1,5 @@
 /**
- * SKYLIGHTS CLOUDS — CLIENT-SIDE JAVASCRIPT
+ * SKYLITE CLOUDS — CLIENT-SIDE JAVASCRIPT
  * Vanilla JS for navigation, interactions, and gallery lightbox
  */
 
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     galleryItems.forEach((item) => {
       item.addEventListener('click', () => {
         const imgSrc = item.getAttribute('data-img-src') || item.querySelector('img')?.getAttribute('src');
-        const imgTitle = item.getAttribute('data-title') || item.querySelector('.gallery-caption-title')?.textContent || 'Skylights Clouds';
+        const imgTitle = item.getAttribute('data-title') || item.querySelector('.gallery-caption-title')?.textContent || 'Skylite Clouds';
         const imgCategory = item.getAttribute('data-category') || '';
 
         if (lightboxImage && imgSrc) {
